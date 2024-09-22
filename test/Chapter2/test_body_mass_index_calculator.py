@@ -5,7 +5,7 @@ from Chapter2.From_java_Dietel_to_python.body_mass_Index_calculator import body_
 
 class test_body_mass_index_calculator(unittest.TestCase):
 
-    def test_for_mass_weight(self, weight,height):
+    def test_for_mass_weight(self):
         weight = 45
         height = 1.65
         outcome = body_mass_calculator(weight, height)
