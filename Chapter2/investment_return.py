@@ -4,5 +4,9 @@ rate = float(input("What is your investment rate? : "))
 years = int(input("How many years you would like to invest? : "))
 
 def calculate_money_invested(principal, rate, years):
-    total_returns = principal (1 + rate) ** years
+    total_returns = principal * (1 + rate) ** years
     return total_returns
+
+amount = calculate_money_invested(principal, rate, years)
+
+print(f"After {years} years, Your investment rate is : {amount:.2f}")
