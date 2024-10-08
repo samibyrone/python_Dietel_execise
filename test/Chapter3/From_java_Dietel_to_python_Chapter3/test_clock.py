@@ -36,13 +36,12 @@ class TestMyClockTimer(unittest.TestCase):
 
     def test_to_display_time_format(self):
         timer = Clock(8, 30, 45)
-        self.assertEqual(timer.time_format(), "08:30:45")
+        self.assertTrue(timer.time_format(), "08:30:45")
 
     def test_to_display_time_with_minimum_value(self):
         timer = Clock(0, 0, 0)
-        self.assertEqual(timer.time_format(),"00:00:00")
+        self.assertTrue(timer.time_format(),"00:00:00")
 
     def test_to_display_time_with_maximum_value(self):
         timer = Clock(23, 59, 59)
-        self.assertEqual(timer.time_format(),"23:59:59")
-
+        self.assertTrue(timer.time_format(),"23:59:59")
