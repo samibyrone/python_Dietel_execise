@@ -2,7 +2,7 @@ from datetime import datetime
 
 class Clock:
 
-    def __init__(self, hour, minute, second):
+    def __init__(self, hour:int, minute:int, second:int):
         self._hour = hour
         self._minute = minute
         self._second = second
